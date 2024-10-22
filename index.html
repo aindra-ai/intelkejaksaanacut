@@ -42,8 +42,15 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">DashBoard</a></li>
-          <li><a href="#team">Team</a></li>
+		  <li class="dropdown"><a href="#"><span>DashBoard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#services">Peta Intelijen</a></li>
+              <li><a href="#statitik">Statistik Perkara</a></li>
+              <li><a href="#">Kartu TIK</a></li>
+              <li><a href="#">Dll</a></li>
+            </ul>
+          </li>           
+		  <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -62,7 +69,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <h2>Kejaksaan Negeri Aceh Utara</h2>
-            <p>Selamat Datang Di Seksi Intelijen Kejaksaan Negeri Aceh Utara</p>
+            <p>Selamat Datang Di Bank Data Intelijen Kejaksaan Negeri Aceh Utara</p>
             <a href="#about" class="btn-get-started">Mulai</a>
           </div>
         </div>
@@ -130,8 +137,7 @@
     <!-- Services Section -->
     <section id="services" class="services section">
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>DashBoard</h2>
+      <div class="container section-title-tab" data-aos="fade-up">
     <h2 class="moving-text">Peta Digital Intelijen Kejaksaan Negeri Aceh Utara</h2>
     <div class='tableauPlaceholder' id='viz1728802614363' style='position: relative'>
         <noscript>
@@ -161,19 +167,67 @@
         var vizElement = divElement.getElementsByTagName('object')[0];
         if (divElement.offsetWidth > 800) {
             vizElement.style.width = '101%';
-            vizElement.style.height = '600px';
+            vizElement.style.height = '590px';
         } else if (divElement.offsetWidth > 500) {
             vizElement.style.width = '101%';
-            izElement.style.height = '500px';
+            izElement.style.height = '490px';
         } else {
             vizElement.style.width = '101%';
-            vizElement.style.height = '400px';
+            vizElement.style.height = '390px';
         }
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>
 </section>
+
+
+	<h2 class="moving-text-new" style="margin-bottom: 0;">Statistik Perkara Kejaksaan Negeri Aceh Utara</h2>
+	<section id="statitik" class="services section" style="margin-top: 0; padding: 0;">
+	<div class='tableauPlaceholder' id='viz1729606150502' style='position: relative'>
+    <noscript>
+        <a href='#'>
+            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PetaDigitalIntel&#47;Dashboard2&#47;1_rss.png' style='border: none' />
+        </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+        <param name='embed_code_version' value='3' /> 
+        <param name='site_root' value='' />
+        <param name='name' value='PetaDigitalIntel&#47;Dashboard2' />
+        <param name='tabs' value='no' /> <!-- Ubah 'yes' menjadi 'no' di sini -->
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pe&#47;PetaDigitalIntel&#47;Dashboard2&#47;1.png' /> 
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+        <param name='filter' value='publish=yes' />
+    </object>
+</div>
+<script type='text/javascript'>                    
+    var divElement = document.getElementById('viz1729606150502');                    
+    var vizElement = divElement.getElementsByTagName('object')[0];                    
+    if ( divElement.offsetWidth > 800 ) { 
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.048)+'px';
+    } else if ( divElement.offsetWidth > 500 ) { 
+        vizElement.style.width='100%';
+        vizElement.style.height=(divElement.offsetWidth*0.048)+'px';
+    } else { 
+        vizElement.style.width='100%';
+        vizElement.style.minHeight='750px';
+        vizElement.style.maxHeight=(divElement.offsetWidth*0.04)+'px';
+    }                     
+    var scriptElement = document.createElement('script');                    
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+
+</section>
+
 
     <!-- Team Section -->
     <section id="team" class="team section">
@@ -415,9 +469,9 @@
           <h4>Menu</h4>
           <ul>
             <li><a href="#"><i class="bi bi-chevron-right"></i> Home</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> About us</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> DashBoard</a></li>
-            <li><a href="#"><i class="bi bi-chevron-right"></i> Team</a></li>
+            <li><a href="#about"><i class="bi bi-chevron-right"></i> About us</a></li>
+            <li><a href="#services"><i class="bi bi-chevron-right"></i> DashBoard</a></li>
+            <li><a href="#team"><i class="bi bi-chevron-right"></i> Team</a></li>
           </ul>
         </div>
 
